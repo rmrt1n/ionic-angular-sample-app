@@ -1,0 +1,94 @@
+{
+  "lists": [
+    {
+      "id": 1,
+      "name": "breakfast",
+      "items": [
+        {
+          "name": "eggs",
+          "isChecked": true
+        },
+        {
+          "name": "milk",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "cleaning",
+      "items": [
+        {
+          "name": "soap",
+          "isChecked": false
+        },
+        {
+          "name": "detergent",
+          "isChecked": false
+        },
+        {
+          "name": "towels",
+          "isChecked": false
+        },
+        {
+          "name": "bugspray",
+          "isChecked": false
+        },
+        {
+          "name": "mop",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "snacks",
+      "items": [
+        {
+          "name": "pocky",
+          "isChecked": false
+        },
+        {
+          "name": "milo",
+          "isChecked": false
+        },
+        {
+          "name": "candy",
+          "isChecked": false
+        },
+        {
+          "name": "potato chips",
+          "isChecked": false
+        }
+      ]
+    },
+    {
+      "name": "dsfdas",
+      "items": [
+        {
+          "name": "fuck",
+          "isChecked": false
+        },
+        {
+          "name": "you",
+          "isChecked": false
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "fff",
+      "items": [
+        {
+          "name": "sfsad22",
+          "isChecked": false
+        },
+        {
+          "name": "sadfas",
+          "isChecked": false
+        }
+      ],
+      "id": 5
+    }
+  ]
+}

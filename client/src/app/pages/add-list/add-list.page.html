@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>New list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-text>
+    <span>
+      <h1>Add new list</h1>
+      <ion-button (click)="saveList()">save</ion-button>
+    </span>
+  </ion-text>
+
+  <ion-item>
+    <ion-label>Name: </ion-label>
+    <ion-input [(ngModel)]="list.name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Item: </ion-label>
+    <ion-input [(ngModel)]="item"></ion-input>
+    <ion-button (click)="addItem()">Add item</ion-button>
+  </ion-item>
+
+  <div *ngIf="list.items.length">
+    <ion-item id="new-list" *ngFor="let i of list.items">
+      <ion-input [(ngModel)]="i.name"></ion-input>
+      <ion-icon id="close" name="close-outline" slot="end" (click)="removeItem(i.name)"></ion-icon>
+    </ion-item>
+  </div>
+
+</ion-content>

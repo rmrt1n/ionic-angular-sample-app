@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="list">
+  <ion-text>
+    <span>
+      <h1>{{list.name}}</h1>
+      <ion-button (click)="deleteList()">delete</ion-button>
+    </span>
+  </ion-text>
+
+  <ion-item>
+    <ion-label>Add item: </ion-label>
+    <ion-input [(ngModel)]="item"></ion-input>
+    <ion-button (click)="addItem()">Add item</ion-button>
+  </ion-item>
+
+  <ion-list *ngFor="let i of list.items">
+    <ion-item>
+      <ion-checkbox slot="start" [(ngModel)]="i.isChecked" (ionChange)="onChange()"></ion-checkbox>
+      <ion-input [(ngModel)]="i.name" (change)="onChange()"></ion-input>
+      <ion-icon id="close" name="close-outline" slot="end" (click)="removeItem(i.name)"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
